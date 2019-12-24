@@ -1,0 +1,41 @@
+{
+    users: {
+        userId: string,
+        userName: string,
+        email: string,
+        password: string,
+        friends: {
+            userId1: string,
+            ...
+            userIdn: string
+        },
+        activeFriends: {
+            userId1: string,
+            ...
+            userIdn: string
+        },
+        activeGame: string,
+    },
+
+    gameSessions: {
+        gameId: {
+            goatsEaten: int,
+            goatsInBoard: int,
+            goatsAlive: int,
+            positions: {
+                '00': int,
+                '01': int,
+                '02': int,
+                '03': int,
+                '04': int,
+                ...
+                '40': int,
+                '41': int,
+                '42': int,
+                '43': int,
+                '44': int,
+            },
+        },
+    },
+}
+    
