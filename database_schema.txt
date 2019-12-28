@@ -1,6 +1,6 @@
 {
     users: {
-        userId: string,
+        _id: string,
         userName: string,
         email: string,
         password: string,
@@ -18,7 +18,7 @@
     },
 
     gameSessions: {
-        gameId: {
+        _id: {
             goatsEaten: int,
             goatsInBoard: int,
             goatsAlive: int,
